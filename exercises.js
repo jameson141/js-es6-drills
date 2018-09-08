@@ -6,7 +6,7 @@
  * @return {Number}
  * 
  */
-var stringCount;
+var stringCount = arr => ;
 
 /* #arrayLength
  *
@@ -24,7 +24,11 @@ var arrayLength;
  * @param {Array}
  * @return {Number}
  */
-var countAll;
+var countAll = arr => {
+  return arr.reduce((accum,curr) => {
+    return accum + curr
+  })
+};
 
 /* #countStrings
  *
@@ -42,7 +46,9 @@ var countStrings;
  * @param {String}
  * @return {Number}
  */
-var countAllStrings;
+var countAllStrings = arr => { 
+  return arr.reduce( (accum, cur) => accum + cur.length);
+};
 
 /* #splitString
  *
@@ -51,7 +57,9 @@ var countAllStrings;
  * @param {String}
  * @return {Array}
  */
-var splitString;
+var splitString 
+
+}
 
 /* #lengthOfLast
  *
