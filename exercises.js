@@ -6,7 +6,9 @@
  * @return {Number}
  * 
  */
-var stringCount = arr => ;
+var stringCount = str => {
+  return str.length;
+};
 
 /* #arrayLength
  *
@@ -15,7 +17,9 @@ var stringCount = arr => ;
  * @param {Array}
  * @return {Number}
  */
-var arrayLength;
+var arrayLength = array => {
+  return array.lengths;
+};
 
 /* #countAll
  *
@@ -37,7 +41,9 @@ var countAll = arr => {
  * @param {Array}
  * @return {Array}
  */
-var countStrings;
+var countStrings = arr => {
+  return arr.map(index = index.length);
+};
 
 /* #countAllStrings
  *
@@ -57,9 +63,15 @@ var countAllStrings = arr => {
  * @param {String}
  * @return {Array}
  */
-var splitString 
+var splitString = str => {
+  return.str.reduce((accum,cur) => {
+    return accum.push(cur);
+  })
+};
 
-}
+
+
+
 
 /* #lengthOfLast
  *
@@ -68,7 +80,9 @@ var splitString
  * @param {String}
  * @return {Number}
  */
-var lengthOfLast;
+var lengthOfLast = arr => {
+  return arr[arr.length-1].length;
+};
 
 /* #sumBelowTen
  *
@@ -77,7 +91,11 @@ var lengthOfLast;
  * @param {Array}
  * @return {Number}
  */
-var sumBelowTen;
+var sumBelowTen = arr => {
+  arr.reduce( (accum,cur) => {
+    return cur.length > 10? accum += 1 : accum
+  },0)
+};
 
 /* #moreThanTenLetters
  *
@@ -86,7 +104,11 @@ var sumBelowTen;
  * @param {String}
  * @return {Number}
  */
-var moreThanTenLetters;
+var moreThanTenLetters = arr => {
+  return arr.reduce( (accum, cur) => {
+    return cur.length > 10? accum += 1 : accum
+  },0)
+};
 
 /* #multiplyAll
  *
@@ -95,7 +117,11 @@ var moreThanTenLetters;
  * @param {Array}
  * @return {Number}
  */
-var multiplyAll;
+var multiplyAll = arr =>{
+  return arr.reduce( (accum,cur) => {
+    return arr.reduce( (accum,cur) => accum * cur,1)
+  
+};
 
 /* #sumAllPositive
  *
@@ -104,7 +130,11 @@ var multiplyAll;
  * @param {String}
  * @return {Number}
  */
-var sumAllPositive;
+var sumAllPositive = arr => {
+  return arr.reduce( (accum,cur) => {
+    return cur >- 0? accum +cur : accum
+},0)
+};
 
 /* #stringCountBelowThree
  *
@@ -113,7 +143,11 @@ var sumAllPositive;
  * @param {Array}
  * @return {Number}
  */
-var stringCountBelowThree;
+var stringCountBelowThree = arr => {
+  return arr.reduce( (accum,cur) => {
+    return cur.length <= 3 ? : accum
+  },0)
+};
 
 /* #doubleArray
  *
@@ -122,7 +156,7 @@ var stringCountBelowThree;
  * @param {Array} // [1,2,3]
  * @return {Array} // [2,4,6]
  */
-var doubleArray;
+var doubleArray = arr => arr.map(element => element * 2);
 
 /* #countObjects
  *
